@@ -1,0 +1,14 @@
+{
+    "name": "template",
+    "version": "0.0.1",
+    "title": "template",
+    "description": "template",
+    "difficultyModes": [
+        "Easy",
+        "Normal",
+        "Hard"
+    ],
+    "keywords": [
+        "JavaScript"
+    ]
+}

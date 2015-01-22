@@ -1,0 +1,17 @@
+{
+    "name": "html-intro",
+    "version": "0.0.1",
+    "title": "HTML and Git Intro",
+    "description": "One of the basic, foundational skills in being a professional web developer is the translation of a designer's mockup image into a webpage with HTML and CSS. At the same time, we're also going to get into the habit of frequently creating git commits as checkpoints.",
+    "difficultyModes": [
+        "Normal",
+        "Hard"
+    ],
+    "keywords": [
+        "HTML",
+        "CSS",
+        "Layout",
+        "Mockups",
+        "Git"
+    ]
+}
