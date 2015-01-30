@@ -212,10 +212,11 @@ describe("Assignment 05 - Fill in the _BLANK_s!", function(){
       var count = 0;
       var left = 10;
 
-      while (left > 0) {
+      while (left >= 1) {
         count = count + 2;
+        left = left - 1;
 
-        expect(left).to.be.greaterThan(_BLANK_);
+        expect(left).to.be.at.least(_BLANK_);
       }
 
       expect(left).to.equal(_BLANK_);
