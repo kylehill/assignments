@@ -226,4 +226,21 @@ describe("Assignment 05 - Fill in the _BLANK_s!", function(){
 
   });
 
+  describe("External Variables", function(){
+
+    it("Values in index.js", function(){
+
+      expect(a).to.equal(42);
+      expect(b).to.equal("hello, world");
+      expect(c).to.equal(true);
+      
+      expect(a).to.exist;
+      expect(b).to.exist;
+      expect(c).to.exist;
+      expect(d).to.not.exist;
+
+    });
+
+  });
+
 });
