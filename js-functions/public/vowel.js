@@ -1,7 +1,7 @@
 /*
   This function should accept a single-letter string as a parameter.
   It should return true if the string is a vowel.
-  (For the sake of argument, Y counts as a consonant today.)
+  (For the sake of argument, let's make Y count as a consonant today.)
   Otherwise, it should return false.
 */
 
