@@ -61,3 +61,22 @@ We're going to add the following features. **You should do it in a TDD way.**
 * **Add a bulk restock method**. Kate invested in her business and bought an EZ-Kate oven. Now she can make a bunch of cupcakes at once. Write a method that works like `restock`, except it only takes one parameter, the number of cupcakes to add. That method should add that number to all cupcake flavors.
 
 * **Add a retired flavors property**. Red velvet cupcakes taste like garbage, but, like, the worst customers come in asking if she makes them all the time. Kate needs a list of all flavors of cupcakes that CupKates used to sell so she can say to them, "see, we used to make red velvet, but it's awful, and you're an awful person for liking it." Modify the `removeFlavor` method so that it adds the flavor to an array of retired flavors. You should make sure that the retired flavors array can't contain duplicate values.
+
+Once that's all done, tag your git commit with `second-release`.
+
+## Nightmare Mode -- Step 3
+
+Part of TDD involves removing old, outdated tests. We're probably going to have to do that here.
+
+If you're not adding new functionality but *changing* existing functionality, you may have to remove tests. Your workflow then becomes:
+
+1. Identify existing, currently passing tests that should fail, post-your changes.
+2. Write new tests that **fail**.
+3. Implement the existing functionality.
+4. Unaffected old tests and your new tests should **pass**. Outdated old tests should **fail.**
+5. Delete the outdated tests.
+
+Add the following feature changes, in a test-driven development way:
+
+* **Modify the inventory and pricing system.** The current system has each cupcake flavor costing the same price. Kate wants to be able to implement market segmentation strategies, and this requires her to sell different cupcakes at different prices. You'll need to change the `cupcakeShop.inventory` property to store cupcake flavor inventory values as objects (with `price` and `quantity` properties). You'll also need to modify many of the existing methods to use the new inventory format.
+
