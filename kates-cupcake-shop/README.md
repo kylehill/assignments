@@ -46,7 +46,7 @@ After you've created the git commit, enter this command:
 
 This creates a little convenient flag that lets anyone that's looking at your code base know that this specific commit is special.
 
-## Normal Mode -- Step 2
+## Hard Mode -- Step 2
 
 Remember how a test-driven development workflow operates.
 
@@ -54,8 +54,10 @@ Remember how a test-driven development workflow operates.
 2. Implement the new functionality.
 3. All tests (old and new) should **pass**.
 
-We're going to add the following features. You should do it in a TDD way.
+We're going to add the following features. **You should do it in a TDD way.**
 
-* tbd feature 1
-* tbd feature 2
-* tbd feature 3
+* **Add a discount method**. Kate wants to drum up business for CupKates, so she's giving out coupons for some percentage off the price of a cupcake. You should write a `cupcakeShop.discountSale` method that works a lot like `makeSale` -- it accepts a flavor parameter, but it also accepts a number value, and the price of cupcakes is temporarily multiplied by that number. (So for 50% off, the number would be .5)
+
+* **Add a bulk restock method**. Kate invested in her business and bought an EZ-Kate oven. Now she can make a bunch of cupcakes at once. Write a method that works like `restock`, except it only takes one parameter, the number of cupcakes to add. That method should add that number to all cupcake flavors.
+
+* **Add a retired flavors property**. Red velvet cupcakes taste like garbage, but, like, the worst customers come in asking if she makes them all the time. Kate needs a list of all flavors of cupcakes that CupKates used to sell so she can say to them, "see, we used to make red velvet, but it's awful, and you're an awful person for liking it." Modify the `removeFlavor` method so that it adds the flavor to an array of retired flavors. You should make sure that the retired flavors array can't contain duplicate values.
