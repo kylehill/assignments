@@ -30,7 +30,7 @@ By default, the first section's content should be visible when the page is loade
 
 You should create a new repository for this project and host it on GitHub via the `gh-pages` branch.
 
-Note: You are **not** allowed to use `$.slideUp`, `$.slideDown`, or `$.slideToggle during this assignment. No using `$.animate` either; please implement any animations with the CSS `transition` property.
+Note: You are **not** allowed to use `$.slideUp`, `$.slideDown`, or `$.slideToggle` during this assignment. No using `$.animate` either; please implement any animations with the CSS `transition` property.
 
 ## Hard Mode
 
