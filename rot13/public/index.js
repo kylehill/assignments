@@ -1,9 +1,3 @@
-$("#inputTranslate").on("click", function(){
-
-  var translated = $("#inputText").val().split("").map(translateCharacter).join("");
-  $("#displayText").text(translated)
-
-})
 
 /*
   Translates a 1 character-length string via ROT13.

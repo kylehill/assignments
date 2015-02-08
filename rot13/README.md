@@ -29,7 +29,7 @@ After completing this assignment, you should be able to effectively use:
 
 * jQuery - listeners, getters, and setters
 * JavaScript in the browser
-* Mocha/Chai in the browser
+* Iteration over arrays
 
 ## Details
 
