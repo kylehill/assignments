@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: ff-tisa-web-pro, serif;
+}
+
+.header {
+  background-color: #39474E;
+  padding: 10px 10%;
+}
+
+.logo-image {
+  width: 80px;
+}
+
+.header-link {
+  color: #eef1f6;
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin:0px 5px;
+}
+
+.header-gray-link {
+  font-weight: normal;
+  font-size: 14px;
+  opacity: .5;
+}
+
+.header-links-left {
+  line-height: 80px;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.header-links-right {
+  line-height: 29px;
+  position: absolute;
+  right: 10%;
+  top: 35px;
+}
+
+.header-button-link {
+  padding: 10px;
+  background: #6fbbb7;
+  border-radius: 5px;
+}
+
+.subheader {
+  background: rgb(205, 130, 54);
+  color: white;
+  padding: 20px 10%;
+}
+
+.course-title {
+  font-size: 60px;
+  border-bottom: solid 4px RGB(229, 192, 152);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subheader-link {
+  font-size: 18px;
+  text-decoration: none;
+  margin: 0px 10px;
+  color: white;
+}
+
+.content {
+  margin: 20px 10%;
+}
+
+.tagline {
+  color: rgb(205, 130, 54);
+  font-weight: bold;
+  font-size: 28px;
+  font-style: italic;
+}
+
+.image-right {
+  background: url("assets/mason-teaching.jpg");
+  float: right;
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+}
+
+.body-content {
+  margin: 20px 0px;
+  font-size: 18px;
+}
+
+.key-points {
+  background: #e3e7e9;
+}
+
+.key-item {
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 30px;
+  text-align: center;
+  font-size: 18px;
+  color: #39474e;
+}
+
+.key-image {
+  height: 100px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 10px;
+}
+
+.key-image.clock {
+  background-image: url("assets/clock.png");
+}
+.key-image.computers {
+  background-image: url("assets/computers.png");
+}
+.key-image.interface {
+  background-image: url("assets/front-end-interface.png");
+}
+.key-image.tetris {
+  background-image: url("assets/tetris.png");
+}
+.key-image.lambda {
+  background-image: url("assets/lambda.png");
+}
+.key-image.brain {
+  background-image: url("assets/brain-guy.png");
+}

@@ -1,0 +1,159 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: ff-tisa-web-pro, serif;
+}
+
+.header {
+  position: absolute;
+  height: 80vh;
+  margin-top: 10vh;
+  width: 150px;
+  margin-left: 50px;
+  opacity: .9;
+}
+
+.logo-image {
+  width: 100px;
+}
+
+.header-link {
+  display: block;
+  color: black;
+  text-decoration: none;
+  background: white;
+  border-bottom: dotted 2px black;
+  padding: 10px;
+  text-align: left;
+}
+
+.header-logo {
+  background:none;
+  text-align: center;
+}
+
+.header-gray-link {
+  display: none;
+}
+
+.header-button-link {
+  background: #333;
+  color: white;
+}
+
+.subheader {
+  position: absolute;
+  background-color: #333;
+  color: white;
+  width: 100%;
+  padding: 10px 40px;
+  border-bottom: dotted 2px white;
+
+}
+
+.course-title {
+  display: inline-block;
+  font-size: 30px;
+}
+
+.subheader-links {
+  position: absolute;
+  right: 40px;
+  top: 20px;
+}
+
+.subheader-link {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.content {
+  background-image: url("assets/mason-teaching.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  padding-left: 250px;
+  padding-top: 100px;
+}
+
+.key-points {
+  width: 900px;
+  border: solid 1px white;
+  font-size: 0px;
+  margin-right: 50px;
+  opacity: .95;
+}
+
+.key-item {
+  width: 50%;
+  display: inline-block;
+  font-size: 16px;
+  background-color: white;
+  vertical-align: top;
+  height: 100px;
+  padding-top: 25px;
+}
+
+.key-item:nth-child(2n) .key-image {
+  float: right;
+  margin-left: 0;
+  margin-right: 30px;
+}
+
+.key-item:nth-child(2n) .key-text {
+  text-align: right;
+  float: right;
+}
+
+.key-image {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.key-text {
+  display: inline-block;
+  line-height: 50px;
+  vertical-align: top;
+  margin: 0px 5px;
+}
+
+.key-image.clock {
+  background-image: url("assets/clock.png");
+}
+.key-image.computers {
+  background-image: url("assets/computers.png");
+}
+.key-image.interface {
+  background-image: url("assets/front-end-interface.png");
+}
+.key-image.tetris {
+  background-image: url("assets/tetris.png");
+}
+.key-image.lambda {
+  background-image: url("assets/lambda.png");
+}
+.key-image.brain {
+  background-image: url("assets/brain-guy.png");
+}
+
+.tagline {
+  width: 900px;
+  background: white;
+  padding: 5px 30px;
+  font-weight: bold;
+  font-size: 24px;
+  font-style: italic;
+  opacity: .95;
+}
+
+.body-content {
+  width: 900px;
+  background: white;
+  padding: 5px 30px;
+  opacity: .95;
+}
