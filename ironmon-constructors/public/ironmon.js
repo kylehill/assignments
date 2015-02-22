@@ -1,4 +1,4 @@
-var Ironmon = function(name, type) {
+var Ironmon = function(name) {
 
 }
 
