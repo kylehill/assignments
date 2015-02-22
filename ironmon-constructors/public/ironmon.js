@@ -1,5 +1,5 @@
 var Ironmon = function(name, type) {
-  
+
 }
 
 Ironmon.prototype.heal = function() {
