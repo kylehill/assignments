@@ -1,4 +1,4 @@
-describe("Ironmon", function(){
+describe("Ironmon - Normal Mode", function(){
 
   describe("constructor", function(){
 
@@ -70,31 +70,9 @@ describe("Ironmon", function(){
 
   })
 
-  describe("prototype.active()", function(){
+  describe("prototype.active", function(){
 
-    it("returns if health is >= 1", function(){
-
-      var foo = new Ironmon("bar")
-      
-      foo.health = 25
-      expect(foo.active()).to.equal(true)
-
-      foo.health = 0
-      expect(foo.active()).to.equal(false)
-
-      foo.health = -10
-      expect(foo.active()).to.equal(false)
-
-      foo.health = 4
-      expect(foo.active()).to.equal(true)
-
-    })
-
-  })
-
-  describe("prototype.active()", function(){
-
-    it("returns if health is >= 1", function(){
+    it("returns (health >= 1)", function(){
 
       var foo = new Ironmon("bar")
       
@@ -114,7 +92,7 @@ describe("Ironmon", function(){
 
   })
 
-  describe("prototype.attack()", function(){
+  describe("prototype.attack", function(){
 
     it("uses the power property", function(){
 
@@ -122,7 +100,7 @@ describe("Ironmon", function(){
       var baddie = new Ironmon("steve")
 
       for (var i = 0; i < 100; i++) {
-        baddie.health = 25;
+        baddie.health = 25
 
         foo.power = 1
         foo.attack(baddie)
@@ -133,16 +111,32 @@ describe("Ironmon", function(){
       foo.power = 10
 
       for (var i = 0; i < 100; i++) {
-        baddie.health = 25;
+        baddie.health = 25
 
         foo.attack(baddie)
 
         expect(baddie.health).to.be.within(15, 24)
       }
 
-    });
+    })
 
-    
+    it("returns the amount of damage done", function(){
+
+      var foo = new Ironmon("bar")
+      var baddie = new Ironmon("steve")
+
+      foo.power = 10
+
+      for (var i = 0; i < 100; i++) {
+        baddie.health = 25;
+
+        var dmg = foo.attack(baddie)
+
+        expect(dmg).to.be.within(1, 10)
+        expect(25 - baddie.health).to.equal(dmg)
+      }
+
+    })
 
   })
 
