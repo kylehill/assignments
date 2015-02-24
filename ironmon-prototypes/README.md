@@ -23,7 +23,7 @@ Today we're going to modify some more classes, which are all moves that can be p
 
 Feel free to copy the code you wrote yesterday into the existing functions.
 
-### Normal Mode
+### Normal Mode -- Part 1
 
 Make all of the normal mode tests pass. 
 
@@ -44,7 +44,11 @@ Fill in the `.use` function for the `Simple`, `Charge`, and `Leech` classes.
 
 The `Game` class is unchanged today.
 
-### Hard Mode -- Part 1
+### Normal Mode -- Part 2
+
+Come up with some more actions! Follow the existing pattern (empty constructor, functionality in `.use`) and be creative. Make sure you've got tests.
+
+### Hard Mode
 
 Normal mode, and also implement the following feature:
 
@@ -57,7 +61,3 @@ Also modify the code in the `Ironmon.prototype.action` method. If...
 * the `type` of this Ironmon is `"grass"` and the opponent's `type` is `"water"`
 
 then **execute the action twice**.
-
-### Hard Mode -- Part 2
-
-Come up with some more actions! Follow the existing pattern (empty constructor, functionality in `.use`) and be creative. Make sure you've got tests.
