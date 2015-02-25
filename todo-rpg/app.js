@@ -7,6 +7,9 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var multer = require('multer'); 
 
+// Get the npm package Underscore -- y'all know what this does
+var u = require("underscore")
+
 
 // Create a new Express application
 var app = express();
@@ -95,6 +98,36 @@ app.put("/tasks", function(req, res){
 
   // Use response.json to respond with the task
   res.json(task)
+})
+
+// Route to return aggregated statistics
+app.get("/stats", function(req, res){
+
+  var completed = taskDB.complete()
+
+  var points = u.reduce(completed, function(mem, task){
+    return mem + task.value
+  }, 0)
+
+  var level = 0
+  while((level * level) < points) {
+    level++
+  }
+
+  var data = {
+    experience: points,
+
+    level: level,
+
+    expToNextLevel: ((level + 1) * (level + 1)) - points,
+
+    completed: completed.length,
+
+    percentComplete: ((completed.length) / (taskDB.all().length))
+  }
+
+  res.json(data)
+
 })
 
 // Exports the Express application that we've added routes to.
