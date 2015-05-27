@@ -29,7 +29,7 @@ This assignment consists of a simple test runner that's performing tests on func
 
 ## Normal Mode
 
-Complete the six functions in `public/max.js`, `public/power.js`, and `public/vowel.js` so that all tests (which are defined in the `public/test` folder) pass.
+Complete the six functions in `public/max.js`, `public/power.js`, and `public/average.js` so that all tests (which are defined in the `public/test` folder) pass.
 
 The first function in each file should be somewhat straightforward. The second function in each file **must** utilize the first function.
 
@@ -37,4 +37,8 @@ The first function in each file should be somewhat straightforward. The second f
 
 ## Hard Mode
 
-Write up another two-tiered set of functions, and write a similar suite of tests for them.
+In additional to normal mode...
+
+1. Complete the four functions in `public/vowel.js` and `public/reverse.js` so that all tests pass. Same as before, the first function in each file should be utilized by the second function.
+
+2. Write up another two-tiered set of functions, and write a similar suite of tests for them.

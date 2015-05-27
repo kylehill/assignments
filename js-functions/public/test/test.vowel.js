@@ -1,4 +1,4 @@
-describe("Vowel functions", function(){
+describe("Hard Mode! Vowel functions", function(){
   
   describe("isVowel", function(){
 
