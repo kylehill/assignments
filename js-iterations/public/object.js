@@ -5,8 +5,8 @@
 
   For instance, [ "a", "b", "c", "b" ] would produce { "a": 1, "b": 2, "c": 1 }
 */
-var frequency = function(number) {
-
+var frequency = function(array) {
+  
 }
 
 /*
@@ -17,7 +17,7 @@ var frequency = function(number) {
   For instance, [ "a", "b", "c", "b" ] would produce [ "a", "b", "c" ].
 */
 var unique = function(array) {
-
+  
 }
 
 /*
@@ -25,15 +25,15 @@ var unique = function(array) {
   It should return the value of the number times 3.
 */
 var tripler = function(number) {
-
+  
 }
 
 /*
   This function should accept an object as a parameter.
-  It should return the object with all of its values tripled.
+  It should return the object with all of its *values* tripled.
 */
-var objectTripler = function(number) {
-
+var objectTripler = function(object) {
+  
 }
 
 /*
@@ -44,7 +44,7 @@ var objectTripler = function(number) {
   For instance, ({ a: 1, b: 2 } and { b: 9, c: 3 }) would produce { a: 1, b: 2, c: 3 }
 */
 var extend = function(left, right) {
-
+  
 }
 
 /*
@@ -54,6 +54,6 @@ var extend = function(left, right) {
 
   For instance, [{a: 1, b: 2}, {a: 3, c: 4}] for "a" would produce [1, 3]
 */
-var pluck = function(object, string) {
-
+var pluck = function(arrayOfObjects, string) {
+  
 }

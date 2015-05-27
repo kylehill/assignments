@@ -3,7 +3,7 @@
   It should return the value of the number times 2.
 */
 var doubler = function(number) {
-
+  
 }
 
 /*
@@ -11,7 +11,7 @@ var doubler = function(number) {
   It should return an array, with each number in the array being doubled.
 */
 var arrayDoubler = function(array) {
-
+  
 }
 
 /*
@@ -27,7 +27,7 @@ var divide = function(numerator, denominator) {
   It should return an array, with each member of the array being divided by the parameter number.
 */
 var arrayDivide = function(array, denominator) {
-
+  
 }
 
 /*
@@ -35,7 +35,7 @@ var arrayDivide = function(array, denominator) {
   It should return the sum of the two numbers.
 */
 var sum = function(a, b) {
-
+  
 }
 
 /*
@@ -43,7 +43,7 @@ var sum = function(a, b) {
   It should return the sum of all the members in the array.
 */
 var arraySum = function(array) {
-
+  
 }
 
 /*
@@ -51,7 +51,7 @@ var arraySum = function(array) {
   It should return the lower of the two numbers.
 */
 var minimum = function(a, b) {
-
+  
 }
 
 /*
@@ -60,7 +60,7 @@ var minimum = function(a, b) {
   If the array has a length = 0, it should return undefined.
 */
 var arrayMinimum = function(array) {
-
+  
 }
 
 /*
@@ -78,7 +78,7 @@ var endsInPeriod = function(string) {
     from the original array which end with a period.
 */
 var arrayEndsInPeriod = function(array) {
-
+  
 }
 
 /*
@@ -96,7 +96,7 @@ var multiple3 = function(number) {
     from the original array which are multiples of 3.
 */
 var arrayMultiple3 = function(array) {
-
+  
 }
 
 
