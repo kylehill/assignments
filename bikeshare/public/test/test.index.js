@@ -3,7 +3,7 @@ describe("Capital Bikeshare System Data", function(){
   describe("Nearest Station", function(){
     it("should be able to retrieve the nearest station", function(testDone){
       localStation(function(data){
-        expect(data.name).to.equal("23rd & Crystal Dr")
+        expect(data.name).to.equal("18th & M St NW")
         testDone()
       })
     })
@@ -24,7 +24,7 @@ describe("Capital Bikeshare System Data", function(){
     it("should be able to retrieve a random station", function(testDone){
 
       randomStation(function(data){
-        expect(data).to.have.property("name")
+        expect(data).to.have.property("docks")
         testDone()
       })
 
@@ -36,6 +36,7 @@ describe("Capital Bikeshare System Data", function(){
 
       emptyStations(function(data){
         expect(data).to.be.an("array")
+        expect(data.length).to.equal(7)
 
         _.each(data, function(station){
           expect(station.bikes).to.equal(0)
@@ -52,12 +53,7 @@ describe("Capital Bikeshare System Data", function(){
 
       recentStations(function(data){
         expect(data).to.be.an("array")
-
-        var fifteenMinutesAgo = (new Date().valueOf() - (15 * 60 * 1000))
-
-        _.each(data, function(station){
-          expect(station.lastUpdate).to.be.above(fifteenMinutesAgo)
-        })
+        expect(data.length).to.equal(21)
 
         testDone()
       })

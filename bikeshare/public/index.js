@@ -2,10 +2,9 @@
   This function accepts a callback function as a parameter.
 
   It calls the callback function with an object containing the data about
-    the station at 23rd and Crystal Drive (which is ID "31011")
+    the station at 18th and M Street NW (which is ID "31221")
 */
 var localStation = function(callback) {
-
 
 }
 
@@ -18,7 +17,6 @@ var localStation = function(callback) {
     with the highest latitude.)
 */
 var northernmostStation = function(callback) {
-
   
 }
 
@@ -27,9 +25,11 @@ var northernmostStation = function(callback) {
 
   It calls the callback function with an object containing the data about 
     a single, random station in the Capital Bikeshare system.
+
+  I'll code review this -- use something to get a random, different station
+    each time.
 */
 var randomStation = function(callback) {
-
   
 }
 
@@ -42,7 +42,6 @@ var randomStation = function(callback) {
 */
 var emptyStations = function(callback) {
 
-  
 }
 
 /*
@@ -54,5 +53,4 @@ var emptyStations = function(callback) {
 */
 var recentStations = function(callback) {
 
-  
 }

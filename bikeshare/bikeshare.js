@@ -9,7 +9,7 @@ var inflateStationData = function(data) {
       longitude: station.lo,
       docks: station.da,
       bikes: station.ba,
-      lastUpdate: station.lu
+      lastUpdated: 1433732947735 - station.lu
     }
   })
 }
