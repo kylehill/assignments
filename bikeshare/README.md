@@ -31,6 +31,11 @@ We're going to write the front end JavaScript that consumes the data from this r
 
 Make all five tests pass.
 
-## Nightmare Mode
+## Hard Mode
 
-Using the data returned with the API, make something interesting. 
+There's an additional endpoint in the nodejs application -- `/live` -- which responds with a very similar JSON data structure; that data, however, is taken from the live Capital Bikeshare website. (As such, the endpoint will load more slowly.)
+
+Using the live data, make something interesting! Two options you could consider..
+
+* A data visualization (check out [ChartJS](http://www.chartjs.org/) for beautiful and kinda straightforward graphing library, if you want to go fancy)
+* Show the nearest bikeshare stations using [Geolocation](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation)
