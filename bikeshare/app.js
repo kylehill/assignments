@@ -12,4 +12,6 @@ var bikeshare = require("./bikeshare")
 
 app.get("/stations", bikeshare.stations)
 
+app.get("/live", bikeshare.live)
+
 module.exports = app
